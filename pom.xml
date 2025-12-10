@@ -69,7 +69,7 @@
 <version>3.3.1</version>
 <configuration>
 <suiteXmlFiles>
-<suiteXmlFile>AmazonProject_testng.xml</suiteXmlFile>
+<suiteXmlFile>TC1_TC2_testng.xml</suiteXmlFile>
 <!--suiteXmlFile>target\surefire-reports\testng-failed.xml</suiteXmlFile-->
 </suiteXmlFiles>
 </configuration>
