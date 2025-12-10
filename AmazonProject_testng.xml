@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC3_LoginWithInvalidCredentials"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC6_Searchingwithfiltersyieldsaccurateresults"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC12_VerifyIfusersabletoselecteachpaymentmethod"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC7_VerifyProductDetailPageDisplaysAllNecessaryInformation"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC8_VerifyIfProductsCanBeSortedByRelevance_Price_Rating"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC01_Verifyifnewusercansuccessfullyregister"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC13_VerifyIfUserIsAbleToApplyForCouponCode"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC9_VerifyProductCanBeAddedToCartFromProductPage"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC2_Loginwithvalidcredentials"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC11_ValidateEntireCheckOutProcess"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC15_ReachTillCartPageWithoutLogin"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC5_SearchFeature"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC14_VerifyUserIsAbleToRate5StarForLastOrderedProduct"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC10_Verifyupdatingandremovingitemsfromthecart"/>
+      <class name="amazonpackage.Amazon_MavenProject1.AmazonProjectTC4_EditProfileInformation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

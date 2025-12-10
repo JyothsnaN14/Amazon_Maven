@@ -1,0 +1,70 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes. Error detail: Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#
+#  Out of Memory Error
+#
+# 
+V  [jvm.dll+0x65dc1d]
+V  [jvm.dll+0x65bb6e]
+V  [jvm.dll+0x247875]
+V  [jvm.dll+0x246fcf]
+V  [jvm.dll+0x1c75ee]
+V  [jvm.dll+0x25685a]
+V  [jvm.dll+0x254dfa]
+V  [jvm.dll+0x3f0256]
+V  [jvm.dll+0x851f8b]
+V  [jvm.dll+0x6cc5ed]
+C  [ucrtbase.dll+0x210b2]
+C  [KERNEL32.DLL+0x17c24]
+C  [ntdll.dll+0x6d721]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001ecd8db0d50, length=97, elements={
+0x000001ecf7c00940, 0x000001ecfe562200, 0x000001ecfe562d20, 0x000001ecfe566600,
+0x000001ecfe566fc0, 0x000001ecfe568630, 0x000001ecfe5721b0, 0x000001ecfe57af50,
+0x000001ecfe57e610, 0x000001ecd80fa520, 0x000001ecd80ff990, 0x000001ecd81b3550,
+0x000001ecd81ebf60, 0x000001ecd8ba0f40, 0x000001ecd8717130, 0x000001ecd8ad0fd0,
+0x000001ecd8ad30a0, 0x000001ecd8ad2380, 0x000001ecd8ad02b0, 0x000001ecd8d8bf30,
+0x000001ecd8d85630, 0x000001ecd8d87d90, 0x000001ecd8d88420, 0x000001ecd8d88ab0,
+0x000001ecd8d85cc0, 0x000001ecd8d8ab80, 0x000001ecd8d8b8a0, 0x000001ecd8d89e60,
+0x000001ecd8ad1660, 0x000001ecd8ad3730, 0x000001ecd8ad1cf0, 0x000001ecd8d8a4f0,
+0x000001ecd8220cf0, 0x000001ecd8223ae0, 0x000001ecd82220a0, 0x000001ecd8222730,
+0x000001ecd821d870, 0x000001ecd8220660, 0x000001ecd821df00, 0x000001ecd821ffd0,
+0x000001ecd8221380, 0x000001ecd8221a10, 0x000001ecd821f940, 0x000001ecda775ee0,
+0x000001ecda7744a0, 0x000001ecda774b30, 0x000001ecda7730f0, 0x000001ecd8222dc0,
+0x000001ecd8223450, 0x000001ecd821c4c0, 0x000001ecd821cb50, 0x000001ecd821d1e0,
+0x000001ecd8d897d0, 0x000001ecd8d86350, 0x000001ecd8d8c5c0, 0x000001ecd8d8cc50,
+0x000001ecd8d869e0, 0x000001ecda772a60, 0x000001ecd8d8b210, 0x000001ecd821e590,
+0x000001ecd821ec20, 0x000001ecd821f2b0, 0x000001ecd8dc03b0, 0x000001ecd8dbf690,
+0x000001ecd8dbe970, 0x000001ecd8dc0a40, 0x000001ecd8dbfd20, 0x000001ecd8dc1df0,
+0x000001ecd8dc3830, 0x000001ecd8dbcf30, 0x000001ecd8dbdc50, 0x000001ecd8dbf000,
+0x000001ecd8dc2480, 0x000001ecda775850, 0x000001ecd8dc10d0, 0x000001ecd8dbd5c0,
+0x000001ecd8d87070, 0x000001ecd8d87700, 0x000001ecd8d89140, 0x000001ecd8691060,
+0x000001ecd86944e0, 0x000001ecd8692410, 0x000001ecd86916f0, 0x000001ecd8693130,
+0x000001ecd8692aa0, 0x000001ecd8691d80, 0x000001ecd8dbe2e0, 0x000001ecd8dc31a0,
+0x000001ecd8dc4550, 0x000001ecd8dc2b10, 0x000001ecd8dc1760, 0x000001ecd8dc3ec0,
+0x000001ecda773780, 0x000001ecda7751c0, 0x000001ecda773e10, 0x000001ecd86937c0,
+0x000001ecd8693e50
+}
+
+Java Threads: ( => current thread )
+  0x000001ecf7c00940 JavaThread "Forwarding newSession on session null to remote"        [_thread_blocked, id=21144, stack(0x0000000201a00000,0x0000000201b00000) (1024K)]
+  0x000001ecfe562200 JavaThread "Reference Handler"          daemon [_thread_blocked, id=19384, stack(0x0000000202200000,0x0000000202300000) (1024K)]
+  0x000001ecfe562d20 JavaThread "Finalizer"                  daemon [_thread_blocked, id=20944, stack(0x0000000202300000,0x0000000202400000) (1024K)]
+  0x000001ecfe566600 JavaThread "Signal Dispatcher"          daemon [_thread_blocked, id=19904, stack(0x0000000202400000,0x0000000202500000) (1024K)]
+  0x000001ecfe566fc0 JavaThread "Attach Listener"            daemon [_thread_blocked, id=19940, stack(0x0000000202500000,0x0000000202600000) (1024K)]
+  0x000001ecfe568630 JavaThread "Service Thread"             daemon [_thread_blocked, id=14088, stack(0x0000000202600000,0x0000000202700000) (1024K)]
+  0x000001ecfe5721b0 JavaThread "Monitor Deflation Thread"   daemon [_thread_blocked, id=24480]
+=>0x000001ecfe57af50  [] 
